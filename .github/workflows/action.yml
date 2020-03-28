@@ -16,12 +16,12 @@ jobs:
             - name: Send mail
               uses: dawidd6/action-send-mail@master
               with:
-                  server_address: smtp.163.com
+                  server_address: smtp.gmail.com
                   server_port: 465
                   username: ${{secrets.MAIL_USERNAME}}
                   password: ${{secrets.MAIL_PASSWORD}}
                   subject: Bitcoin Rate Report
                   body: file://result.html
-                  to: mapleblue2007@gmail.com
+                  to: o0line@outlook.com
                   from: GitHub Actions
                   content_type: text/html
